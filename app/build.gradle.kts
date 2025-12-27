@@ -7,6 +7,10 @@ android {
     namespace = "com.nmp160423075.project_nmp_new"
     compileSdk = 36
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.nmp160423075.project_nmp_new"
         minSdk = 24
@@ -40,7 +44,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.squareup.picasso:picasso:2.8")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
